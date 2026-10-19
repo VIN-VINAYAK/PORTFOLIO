@@ -18,15 +18,20 @@ export default function Hero() {
             AI &amp; Data Science Engineer
           </Reveal>
           <h1 aria-label={NAME}>
-            {[...NAME].map((c, i) =>
-              c === ' ' ? (
-                ' '
-              ) : (
-                <span key={i} className="ch" aria-hidden="true" style={{ '--i': i } as CSSProperties}>
-                  {c}
-                </span>
-              ),
-            )}
+            {NAME.split(' ').map((word) => (
+              <span key={word} className="word">
+                {[...word].map((c, i) => (
+                  <span
+                    key={i}
+                    className="ch"
+                    aria-hidden="true"
+                    style={{ '--i': NAME.indexOf(word) + i } as CSSProperties}
+                  >
+                    {c}
+                  </span>
+                ))}
+              </span>
+            ))}
           </h1>
           <div className="role gt">{role}</div>
           <Reveal as="p" className="lead" delay="1.5s">
