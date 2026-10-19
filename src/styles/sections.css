@@ -1,0 +1,23 @@
+/* Marquee, about, projects, skills, contact */
+.mq{overflow:hidden;padding:18px 0;margin:10px 0;border-block:1px solid var(--chb);background:var(--g2);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.mq div{display:flex;gap:48px;width:max-content;animation:mq 32s linear infinite}
+.mq span{font:700 clamp(22px,3vw,34px) 'Space Grotesk',sans-serif;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px var(--ol);white-space:nowrap}
+.mq span:nth-child(3n){-webkit-text-stroke-color:var(--c1)}.mq span:nth-child(3n+1){-webkit-text-stroke-color:var(--c3)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.ab{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:start}
+.ab p{color:var(--tx2);margin-bottom:16px;font-size:17px}.ab strong{color:var(--tx);font-weight:500}
+.pj{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pc{padding:30px 26px;display:flex;flex-direction:column;gap:12px;height:100%;min-height:400px}
+.no{font:700 74px/1 'Space Grotesk',sans-serif;color:transparent;-webkit-text-stroke:1px var(--ol)}
+.pc small{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--c1)}
+.pc h3{font-size:32px}.pc p{color:var(--tx2);font-size:15px;flex:1}
+.tg{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:6px 13px;border-radius:99px;font-size:13px;border:1px solid var(--chb);background:var(--ch);transition:.3s;display:inline-block}
+.chip:hover{transform:translateY(-3px) scale(1.07);border-color:var(--c1);box-shadow:0 8px 24px rgba(34,211,238,.25)}
+.lr{border-style:dashed;color:var(--c3)}
+.sk{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sg{padding:24px 22px;height:100%}.sg h3{font-size:20px;margin-bottom:16px;color:var(--c1)}
+.cn{padding:clamp(28px,5vw,60px);text-align:center}
+.cn h2{max-width:800px;margin:0 auto 26px}
+.cn .row{justify-content:center;margin-top:14px}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:10px 20px 40px}

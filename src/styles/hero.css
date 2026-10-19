@@ -1,0 +1,15 @@
+/* Hero section */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.st{display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border-radius:99px;font-size:13px;margin-bottom:22px;color:var(--mu)}
+.st b{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 12px #34d399;animation:pl 1.8s infinite}
+@keyframes pl{50%{opacity:.3}}
+h1{font-size:clamp(46px,8.2vw,108px);margin-bottom:16px;perspective:600px}
+.ch{display:inline-block;opacity:0;transform:translateY(100%) rotateX(-90deg);transform-origin:50% 100%;animation:up .9s cubic-bezier(.2,.9,.2,1) forwards;animation-delay:calc(var(--i)*55ms + 1.2s)}
+@keyframes up{to{opacity:1;transform:none}}
+.role{font:500 clamp(20px,2.8vw,32px)/1.3 'Space Grotesk',sans-serif;min-height:1.4em;margin-bottom:18px}
+.gt{background:linear-gradient(100deg,var(--tx) 10%,var(--c1) 45%,var(--c3) 80%);background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+.role::after{content:"";display:inline-block;width:2px;height:.9em;margin-left:4px;background:var(--c1);vertical-align:middle;animation:pl 1s infinite}
+.lead{max-width:520px;color:var(--mu);font-size:17px;margin-bottom:28px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.stc{padding:22px 24px;margin-bottom:16px}.stc small{display:block;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mu)}.stc b{font:500 19px 'Space Grotesk',sans-serif;letter-spacing:-.02em}

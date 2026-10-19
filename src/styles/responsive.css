@@ -1,0 +1,4 @@
+/* Breakpoints and reduced motion */
+@media(max-width:900px){.hero,.ab{grid-template-columns:1fr}.pj{grid-template-columns:1fr}.sk{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){#nav .lk{display:none}.sk{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
