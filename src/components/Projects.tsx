@@ -22,10 +22,19 @@ export default function Projects() {
                     <span key={t} className="chip">{t}</span>
                   ))}
                 </div>
-                {p.link && (
-                  <a className="btn" href={p.link} target="_blank" rel="noopener noreferrer" style={{ alignSelf: 'flex-start' }}>
-                    View on GitHub ↗
-                  </a>
+                {(p.link || p.repo) && (
+                  <div className="pl">
+                    {p.link && (
+                      <a className="btn" href={p.link} target="_blank" rel="noopener noreferrer">
+                        {p.linkLabel || 'View on GitHub ↗'}
+                      </a>
+                    )}
+                    {p.repo && (
+                      <a className="btn" href={p.repo} target="_blank" rel="noopener noreferrer">
+                        View on GitHub ↗
+                      </a>
+                    )}
+                  </div>
                 )}
               </article>
             </Reveal>

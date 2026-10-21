@@ -12,10 +12,10 @@ export default function Hero() {
         <div>
           <Reveal className="st glass">
             <b />
-            Open to AI/ML &amp; GenAI internships
+            Open to Data Analytics &amp; GenAI internships
           </Reveal>
           <Reveal as="p" className="eb" delay=".1s">
-            AI &amp; Data Science Engineer
+            Data Analytics &amp; Generative AI
           </Reveal>
           <h1 aria-label={NAME}>
             {NAME.split(' ').map((word) => (
@@ -35,7 +35,7 @@ export default function Hero() {
           </h1>
           <div className="role gt">{role}</div>
           <Reveal as="p" className="lead" delay="1.5s">
-            I build AI-powered products, GenAI experiences and full-stack software that solve real problems — from concept to architecture to deployment.
+            I turn data into decisions with Power BI and SQL, and build Generative AI products end to end — from LLM-powered apps to full-stack software.
           </Reveal>
           <Reveal className="row" delay="1.7s">
             <a className="btn pri" href="#projects">

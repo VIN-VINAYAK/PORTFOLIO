@@ -21,7 +21,7 @@ src/
   data/content.ts       ALL text, links, projects, skills — edit content here
   components/
     Scene.tsx           three.js background (particles, core, per-section shapes, theme-aware)
-    Navbar.tsx  Hero.tsx  Marquee.tsx  About.tsx  Projects.tsx  Skills.tsx  Contact.tsx
+    Navbar.tsx  Hero.tsx  Marquee.tsx  About.tsx  Projects.tsx  Skills.tsx  Certifications.tsx  Contact.tsx
     Reveal.tsx          scroll-reveal wrapper      Chip.tsx   skill/tag pill
     Cursor.tsx          custom cursor ring         Chrome.tsx Loader + scroll progress bar
   hooks/
@@ -34,6 +34,8 @@ src/
 ## Customize
 - Colors / light & dark palettes: `src/styles/theme.css`
 - Particle count, shapes, camera path: `src/components/Scene.tsx`
+- Add a certificate: drop an image in `public/certs/` and append to `CERTS` in `src/data/content.ts`
+- Skill percentages: edit `level` values in `SKILLS` (self-assessed, 0–100)
 - Add a project or skill: append to `PROJECTS` / `SKILLS` in `src/data/content.ts`
 
 ## Deploy

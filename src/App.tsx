@@ -1,5 +1,6 @@
 import About from './components/About'
 import { Loader, Progress } from './components/Chrome'
+import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import Cursor from './components/Cursor'
 import Hero from './components/Hero'
@@ -28,6 +29,7 @@ export default function App() {
         <About />
         <Projects />
         <Skills />
+        <Certifications />
         <Contact />
       </main>
       <footer>© 2026 Nainesh Kumar Gajre · Built with React &amp; three.js</footer>

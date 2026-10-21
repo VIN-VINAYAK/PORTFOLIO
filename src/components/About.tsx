@@ -13,7 +13,7 @@ export default function About() {
         <div className="ab">
           <Reveal delay=".1s">
             <p>
-              I’m pursuing a B.Tech in <strong>Artificial Intelligence &amp; Data Science</strong> at VTU, focused on practical software and AI-powered applications. I learn by building — and I like owning a product end to end.
+              I’m pursuing a B.Tech in <strong>Artificial Intelligence &amp; Data Science</strong> at VTU, with a focus on <strong>Data Analytics</strong> and <strong>Generative AI</strong>. I learn by building — and I like owning a product end to end.
             </p>
             <p>
               My projects span a gamified life-management platform, an AI note-taking assistant and a pediatric vaccination system with ML risk scoring and a RAG assistant. I’m now deepening my work in <strong>LLM apps, AI agents, RAG</strong> and modern AI workflows.
